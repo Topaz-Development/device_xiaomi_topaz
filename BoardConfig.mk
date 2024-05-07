@@ -107,6 +107,7 @@ BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000
 
 # Kernel prebuilt
+INLINE_KERNEL_BUILDING := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
