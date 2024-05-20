@@ -36,12 +36,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# A2DP
-PRODUCT_PACKAGES += \
-  liba2dpoffload \
-  android.hardware.bluetooth.a2dp@1.0-impl \
-  android.hardware.bluetooth.a2dp@1.0-service
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -106,7 +100,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio-V2-ndk.vendor \
     audio.bluetooth.default \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.bluetooth.audio-V1-ndk.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -167,25 +160,18 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    gralloc.bengal \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libdisplayconfig.system.qti \
     libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libsdmcore \
-    libsdmutils \
     vendor.display.config@1.14 \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator@3.0.vendor \
     vendor.qti.hardware.display.allocator@4.0.vendor \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.composer@3.0.vendor \
@@ -279,7 +265,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
-    IPACM_Filter_cfg.xml
 
 # IR
 PRODUCT_PACKAGES += \
@@ -308,7 +293,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qti.dcvs.sh \
     init.qti.early_init.sh \
@@ -344,7 +328,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
-    libcodec2_hidl_plugin.vendor \
     libcodec2_vndk.vendor \
     libsfplugin_ccodec_utils.vendor \
     libplatformconfig
@@ -432,7 +415,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service \
     android.hardware.power@1.2.vendor
 
 PRODUCT_COPY_FILES += \
@@ -448,9 +430,7 @@ PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor \
-    libqti_vndfwk_detect_vendor.vendor \
     libvndfwk_detect_jni.qti.vendor \
-    libvndfwk_detect_jni.qti_vendor.vendor
 
 # QTI service tracker
 PRODUCT_PACKAGES += \
